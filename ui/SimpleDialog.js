@@ -9,7 +9,7 @@ define([
          buildRendering: function() {
              this.content = dojo.create("div");
              this.contentNode = dojo.create("div", {}, this.content);
-             this.buttonBarNode = dojo.create("div", { class: "dijitDialogPaneActionBar" }, this.content);
+             this.buttonBarNode = dojo.create("div", { "class": "dijitDialogPaneActionBar" }, this.content);
              
              var self = this;
              dojo.forEach(this.buttons, function(name, index) {
