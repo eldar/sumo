@@ -1,6 +1,5 @@
 define([
-    "dojo",
-    "order!util/underscore",
+    "dojo"
 ], function(dojo) {
     return {
         makeUnique: function(obj, prefix) {
