@@ -287,8 +287,11 @@ define([
                     next.resize();
                 }
             }
-
         },
+        
+        childVisibilityChanged: function() {
+            
+        }
     });
 
     var SplitterWidget = dojo.declare("sumo.ui._Splitter", [dijit._Widget, dijit._TemplatedMixin, Oriented], {

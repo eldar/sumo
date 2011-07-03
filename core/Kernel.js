@@ -18,12 +18,14 @@ define([
                     widget.__sumo_display = dojo.getComputedStyle(node).display;
                     dojo.style(node, { display: "none"});
                     if(parent)
-                        parent()
+                        parent.childVisibilityChanged(this);
                 }
             } else {
                 if(!this.isWidgetVisible(widget)) { // show if hidden
                     var display = widget.__sumo_display || "block";
                     dojo.style(node, { display: display });
+                    if(parent)
+                        parent.childVisibilityChanged(this);
                 }
             }
         },
